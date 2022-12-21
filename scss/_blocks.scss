@@ -4,3 +4,23 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.btn {
+  min-width: 206px;
+  padding: 12px 20px;
+  font-size: 20px;
+  line-height: calc(30 / 20 * 100%);
+  color: $black;
+  background-color: $yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid $yellow;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: transparent;
+    color: $yellow;
+  }
+}
