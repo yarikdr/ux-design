@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:  url('../fonts/icons.eot?g4b8tp');
-  src:  url('../fonts/icons.eot?g4b8tp#iefix') format('embedded-opentype'),
-    url('../fonts/icons.ttf?g4b8tp') format('truetype'),
-    url('../fonts/icons.woff?g4b8tp') format('woff'),
-    url('../fonts/icons.svg?g4b8tp#icons') format('svg');
+  src:  url('../fonts/icons.eot?drhoao');
+  src:  url('../fonts/icons.eot?drhoao#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?drhoao') format('truetype'),
+    url('../fonts/icons.woff?drhoao') format('woff'),
+    url('../fonts/icons.svg?drhoao#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="_icon-"], [class*=" _icon-"] {
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-cv:before {
+  content: "\e904";
+}
 ._icon-fb:before {
   content: "\e900";
 }
