@@ -292,6 +292,7 @@ body {
       font-size: 100px;
       letter-spacing: 20px;
       line-height: calc(300 / 200 * 100%);
+      z-index: -1;
     }
   }
 
@@ -353,11 +354,14 @@ body {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  position: relative;
   margin-bottom: 140px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+  }
+
   &__title {
     font-weight: 600;
     font-size: 50px;
@@ -376,6 +380,7 @@ body {
       opacity: 0.1;
       font-size: 200px;
       line-height: calc(300 / 200 * 100%);
+      z-index: -1;
     }
   }
 
